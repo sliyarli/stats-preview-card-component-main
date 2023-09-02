@@ -137,7 +137,7 @@ body {
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
     width: 80vw;
-    height: 91vh;
+    height: 100%;
   }
 
   .stats-card-counter-container {
