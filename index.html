@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <!-- STYLE FILES -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/flexbox-utilities.css" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="d-flex flex-justify-center flex-items-center">
+    <main>
+      <div class="preview-card d-flex">
+        <div class="preview-card-stats d-flex flex-column flex-justify-around">
+          <div class="stats-card-info d-flex flex-column">
+            <h2 class="stats-card-heading">
+              Get <span>insights</span> that help your business grow.
+            </h2>
+            <p class="stats-card-desc">
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </p>
+          </div>
+          <div
+            class="stats-card-counter-container d-flex flex-items-center flex-justify-between"
+          >
+            <div class="companies-counter counter">
+              <h3 class="counter-heading">10k+</h3>
+              <h4 class="counter-name">companies</h4>
+            </div>
+            <div class="templates-counter counter">
+              <h3 class="counter-heading">314</h3>
+              <h4 class="counter-name">templates</h4>
+            </div>
+            <div class="queries-counter counter">
+              <h3 class="counter-heading">12M+</h3>
+              <h4 class="counter-name">queries</h4>
+            </div>
+          </div>
+        </div>
+        <div class="preview-card-image-container">
+          <picture class="card-stats-image">
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/image-header-mobile.jpg"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcset="./images/image-header-desktop.jpg"
+            />
+            <img src="./images/image-header-desktop.jpg" alt="" />
+          </picture>
+          <div class="image-overlay"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
